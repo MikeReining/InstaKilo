@@ -16,6 +16,12 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        println("\(self.view.frame)")
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        println("\(self.view.frame)")
         
     }
     
