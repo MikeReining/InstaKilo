@@ -9,6 +9,9 @@
 import UIKit
 
 class CollectionViewController: UICollectionViewController {
+    var bitArray = BitLoader.initialBitArrayLoader()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -18,7 +21,7 @@ class CollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 9    }
+        return bitArray.count    }
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         var cell = collectionView.dequeueReusableCellWithReuseIdentifier("PhotoCell", forIndexPath: indexPath) as PhotoCell

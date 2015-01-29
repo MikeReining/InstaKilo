@@ -16,6 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        var myDirectoryPath = NSBundle.mainBundle().pathForResource("AnimalKingdom", ofType: nil)
+        
+        var contentsOfDirectory = NSFileManager.defaultManager().contentsOfDirectoryAtPath(myDirectoryPath!, error: nil)
+        
+        var swiftArray = contentsOfDirectory as [String]
+
+        println("\(swiftArray.count)")
+        
+        
+        
+        
         return true
     }
 
