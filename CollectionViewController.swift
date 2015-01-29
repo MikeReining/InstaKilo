@@ -61,8 +61,11 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
                     withReuseIdentifier: "CollectionHeaderView",
                     forIndexPath: indexPath)
                     as CollectionHeaderView
-                headerView.headerLabel.text = "Sample Header"
-//                headerView.label.text = searches[indexPath.section].searchTerm
+                if indexPath.section == 0 {
+                    headerView.headerLabel.text = "Animal Kingdom"
+                } else {
+                    headerView.headerLabel.text = "Famous Places"
+                }
                 return headerView
             default:
                 //4
