@@ -23,7 +23,8 @@ class BitLoader {
         for bit in swiftArray {
             if bit.hasSuffix(".mp3") {
                 var separatedString = split(bit, {(c:Character) -> Bool in return c == "."}, allowEmptySlices: false)
-                var newBit = Bit(name: separatedString[0])
+                var newBitName = folderName + "/" + separatedString[0]
+                var newBit = Bit(name: newBitName)
                 bitArray.append(newBit)
             }
         }
