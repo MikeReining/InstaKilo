@@ -153,7 +153,6 @@
 				27884CAF1A7ABAA600037B94 /* PhotoCell.swift */,
 				27884CB71A7ABEBA00037B94 /* MyPlayground.playground */,
 				27EB347E1A7ACB7B00F184CD /* SplitExamples.playground */,
-				27884CB51A7ABE0200037B94 /* Bit.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -162,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				27884CBA1A7AC0CF00037B94 /* BitLoader.swift */,
+				27884CB51A7ABE0200037B94 /* Bit.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";

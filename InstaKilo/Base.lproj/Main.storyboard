@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="18" minimumInteritemSpacing="0.0" id="pQS-Tf-j3o">
                             <size key="itemSize" width="160" height="160"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="50" height="88"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="18" minY="20" maxX="18" maxY="20"/>
                         </collectionViewFlowLayout>
@@ -44,6 +44,26 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionHeaderView" id="a6D-k3-SCe" customClass="CollectionHeaderView" customModule="InstaKilo" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="64" width="600" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVg-WT-i8Y">
+                                    <rect key="frame" x="28" y="18" width="76.5" height="52"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="uVg-WT-i8Y" firstAttribute="leading" secondItem="a6D-k3-SCe" secondAttribute="leadingMargin" constant="20" id="1g3-pM-Z1S"/>
+                                <constraint firstItem="uVg-WT-i8Y" firstAttribute="top" secondItem="a6D-k3-SCe" secondAttribute="topMargin" constant="10" id="CUc-ir-CdJ"/>
+                                <constraint firstAttribute="bottomMargin" secondItem="uVg-WT-i8Y" secondAttribute="bottom" constant="10" id="o4D-k3-UWH"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="headerLabel" destination="uVg-WT-i8Y" id="prb-4s-4Eh"/>
+                            </connections>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="6SB-XP-6oN" id="Kw7-kz-HHv"/>
                             <outlet property="delegate" destination="6SB-XP-6oN" id="T8i-1w-CdO"/>

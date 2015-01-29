@@ -9,5 +9,7 @@
 import UIKit
 
 class CollectionHeaderView: UICollectionReusableView {
-        
+    @IBOutlet weak var headerLabel: UILabel!
+
+
 }
