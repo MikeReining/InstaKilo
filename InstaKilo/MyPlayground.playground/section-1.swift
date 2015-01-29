@@ -20,7 +20,9 @@ var myArray = [
 
 for bit in myArray {
     if bit.hasSuffix(".mp3") {
-        var newBit = Bit(name: bit)
+        var separatedString = split(bit, {(c:Character) -> Bool in return c == "."}, allowEmptySlices: false)
+        
+        var newBit = Bit(name: separatedString[0])
         println("test")
         bitArray.append(newBit)
     }
@@ -28,6 +30,9 @@ for bit in myArray {
 
 bitArray.count
 
+bitArray[0]
+
+
+
 var exampleString = "antelope.mp3"
 exampleString.hasSuffix(".mp3")
-

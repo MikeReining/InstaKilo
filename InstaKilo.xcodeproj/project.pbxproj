@@ -45,6 +45,7 @@
 		27884CB51A7ABE0200037B94 /* Bit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bit.swift; sourceTree = "<group>"; };
 		27884CB71A7ABEBA00037B94 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		27884CBA1A7AC0CF00037B94 /* BitLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitLoader.swift; sourceTree = "<group>"; };
+		27EB347E1A7ACB7B00F184CD /* SplitExamples.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SplitExamples.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +147,7 @@
 				27884CBA1A7AC0CF00037B94 /* BitLoader.swift */,
 				27884CAF1A7ABAA600037B94 /* PhotoCell.swift */,
 				27884CB71A7ABEBA00037B94 /* MyPlayground.playground */,
+				27EB347E1A7ACB7B00F184CD /* SplitExamples.playground */,
 				27884CB51A7ABE0200037B94 /* Bit.swift */,
 			);
 			name = ViewControllers;
@@ -457,6 +459,7 @@
 				27884B1C1A7A881D00037B94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27884B1D1A7A881D00037B94 /* Build configuration list for PBXNativeTarget "InstaKiloTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +468,7 @@
 				27884B1F1A7A881D00037B94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

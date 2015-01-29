@@ -25,6 +25,11 @@ class CollectionViewController: UICollectionViewController {
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         var cell = collectionView.dequeueReusableCellWithReuseIdentifier("PhotoCell", forIndexPath: indexPath) as PhotoCell
+        
+        let bit = bitArray[indexPath.row]
+        let imageString = bit.name + "_256.jpg"
+        cell.bitImage.image = UIImage(named: imageString)
+        
         return cell
     }
     
