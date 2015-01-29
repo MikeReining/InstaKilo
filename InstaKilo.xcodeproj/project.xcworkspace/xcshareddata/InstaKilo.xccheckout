@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E6146F27-3E36-453D-BBA0-B2BF1C33B1B0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>InstaKilo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DAFA6A2C6A1C1EB76A148F532771A0516DBE745F</key>
+		<string>https://github.com/MikeReining/InstaKilo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>InstaKilo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DAFA6A2C6A1C1EB76A148F532771A0516DBE745F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MikeReining/InstaKilo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DAFA6A2C6A1C1EB76A148F532771A0516DBE745F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DAFA6A2C6A1C1EB76A148F532771A0516DBE745F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>InstaKilo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
