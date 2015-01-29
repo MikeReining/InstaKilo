@@ -150,7 +150,6 @@
 			children = (
 				27884CAD1A7AB8AE00037B94 /* CollectionViewController.swift */,
 				27EB34811A7AD66800F184CD /* CollectionHeaderView.swift */,
-				27884CBA1A7AC0CF00037B94 /* BitLoader.swift */,
 				27884CAF1A7ABAA600037B94 /* PhotoCell.swift */,
 				27884CB71A7ABEBA00037B94 /* MyPlayground.playground */,
 				27EB347E1A7ACB7B00F184CD /* SplitExamples.playground */,
@@ -162,6 +161,7 @@
 		27884CAC1A7A916600037B94 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				27884CBA1A7AC0CF00037B94 /* BitLoader.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";

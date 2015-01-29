@@ -37,8 +37,9 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         var cell = collectionView.dequeueReusableCellWithReuseIdentifier("PhotoCell", forIndexPath: indexPath) as PhotoCell
         
         let section = bitArrays[indexPath.section]
+        
         let bit = section[indexPath.row]
-        let imageString = bit.name + "_256.jpg"
+        let imageString = "AnimalKingdom/" + bit.name + "_256.jpg"
         let image = UIImage(named: imageString)
         cell.bitImage.image = image
         
