@@ -17,6 +17,8 @@
 		27884CB41A7ABC7200037B94 /* AnimalKingdom in Resources */ = {isa = PBXBuildFile; fileRef = 27884CB31A7ABC7200037B94 /* AnimalKingdom */; };
 		27884CB61A7ABE0200037B94 /* Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27884CB51A7ABE0200037B94 /* Bit.swift */; };
 		27884CBB1A7AC0CF00037B94 /* BitLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27884CBA1A7AC0CF00037B94 /* BitLoader.swift */; };
+		27EB34801A7AD0B200F184CD /* FamousPlaces in Resources */ = {isa = PBXBuildFile; fileRef = 27EB347F1A7AD0B200F184CD /* FamousPlaces */; };
+		27EB34821A7AD66800F184CD /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EB34811A7AD66800F184CD /* CollectionHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		27884CB71A7ABEBA00037B94 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		27884CBA1A7AC0CF00037B94 /* BitLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitLoader.swift; sourceTree = "<group>"; };
 		27EB347E1A7ACB7B00F184CD /* SplitExamples.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SplitExamples.playground; sourceTree = "<group>"; };
+		27EB347F1A7AD0B200F184CD /* FamousPlaces */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FamousPlaces; sourceTree = "<group>"; };
+		27EB34811A7AD66800F184CD /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 		27884B211A7A8CF300037B94 /* Content */ = {
 			isa = PBXGroup;
 			children = (
+				27EB347F1A7AD0B200F184CD /* FamousPlaces */,
 				27884CB31A7ABC7200037B94 /* AnimalKingdom */,
 			);
 			name = Content;
@@ -144,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				27884CAD1A7AB8AE00037B94 /* CollectionViewController.swift */,
+				27EB34811A7AD66800F184CD /* CollectionHeaderView.swift */,
 				27884CBA1A7AC0CF00037B94 /* BitLoader.swift */,
 				27884CAF1A7ABAA600037B94 /* PhotoCell.swift */,
 				27884CB71A7ABEBA00037B94 /* MyPlayground.playground */,
@@ -240,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27EB34801A7AD0B200F184CD /* FamousPlaces in Resources */,
 				27884CB41A7ABC7200037B94 /* AnimalKingdom in Resources */,
 				27884B061A7A881D00037B94 /* Main.storyboard in Resources */,
 				27884B0B1A7A881D00037B94 /* LaunchScreen.xib in Resources */,
@@ -264,6 +271,7 @@
 				27884CB61A7ABE0200037B94 /* Bit.swift in Sources */,
 				27884CAE1A7AB8AE00037B94 /* CollectionViewController.swift in Sources */,
 				27884CB01A7ABAA700037B94 /* PhotoCell.swift in Sources */,
+				27EB34821A7AD66800F184CD /* CollectionHeaderView.swift in Sources */,
 				27884CBB1A7AC0CF00037B94 /* BitLoader.swift in Sources */,
 				27884B011A7A881D00037B94 /* AppDelegate.swift in Sources */,
 			);

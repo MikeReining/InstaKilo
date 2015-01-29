@@ -28,9 +28,12 @@ for bit in myArray {
     }
 }
 
-bitArray.count
+bitArray
 
-bitArray[0]
+var bitArray2 = [Bit]()
+
+var sections = [bitArray, bitArray2]
+
 
 
 

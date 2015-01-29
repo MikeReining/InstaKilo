@@ -10,9 +10,9 @@ import Foundation
 
 class BitLoader {
 
-    class func initialBitArrayLoader() -> [Bit] {
+    class func initialBitArrayLoader(folderName: String) -> [Bit] {
         
-        var myDirectoryPath = NSBundle.mainBundle().pathForResource("AnimalKingdom", ofType: nil)
+        var myDirectoryPath = NSBundle.mainBundle().pathForResource(folderName, ofType: nil)
 
         var contentsOfDirectory = NSFileManager.defaultManager().contentsOfDirectoryAtPath(myDirectoryPath!, error: nil) as [String]
 
