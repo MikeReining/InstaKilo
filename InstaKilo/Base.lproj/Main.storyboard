@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6SB-XP-6oN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uj5-vx-RCe">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Collection View Controller-->
+        <!--ABC Wildlife-->
         <scene sceneID="mPT-zO-aln">
             <objects>
                 <collectionViewController id="6SB-XP-6oN" customClass="CollectionViewController" customModule="InstaKilo" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,7 +15,7 @@
                             <size key="itemSize" width="50" height="50"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="xye-oY-DJq">
@@ -34,8 +34,27 @@
                             <outlet property="delegate" destination="6SB-XP-6oN" id="T8i-1w-CdO"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" title="ABC Wildlife" id="CNT-Se-1Ur"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fVH-du-leD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1438" y="101"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Q3v-cs-nWk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uj5-vx-RCe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mc5-ez-JWz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6SB-XP-6oN" kind="relationship" relationship="rootViewController" id="Kss-da-aRb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X4G-8B-h6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="626" y="101"/>
         </scene>
