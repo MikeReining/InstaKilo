@@ -5,14 +5,14 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Photos-->
+        <!--Cover Flow Layout-->
         <scene sceneID="mPT-zO-aln">
             <objects>
                 <collectionViewController id="6SB-XP-6oN" customClass="CollectionViewController" customModule="InstaKilo" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="qh8-QS-IwS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="485"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="18" minimumInteritemSpacing="0.0" id="pQS-Tf-j3o" customClass="CollectionViewBigFlowLayout" customModule="InstaKilo" customModuleProvider="target">
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="18" minimumInteritemSpacing="0.0" id="pQS-Tf-j3o" customClass="CoverFlowLayout" customModule="InstaKilo" customModuleProvider="target">
                             <size key="itemSize" width="160" height="160"/>
                             <size key="headerReferenceSize" width="50" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -48,7 +48,7 @@
                             <rect key="frame" x="0.0" y="64" width="600" height="50"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVg-WT-i8Y">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVg-WT-i8Y">
                                     <rect key="frame" x="16" y="0.0" width="77" height="52"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -69,7 +69,7 @@
                             <outlet property="delegate" destination="6SB-XP-6oN" id="T8i-1w-CdO"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Photos" id="CNT-Se-1Ur"/>
+                    <navigationItem key="navigationItem" title="Cover Flow Layout" id="CNT-Se-1Ur"/>
                     <connections>
                         <outlet property="collectionView" destination="qh8-QS-IwS" id="Gxk-Hd-QrA"/>
                     </connections>
@@ -109,9 +109,6 @@
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="en7-BA-lMK">
                                 <rect key="frame" x="0.0" y="115" width="600" height="485"/>
-                                <connections>
-                                    <segue destination="6SB-XP-6oN" kind="embed" id="Psb-al-fyG"/>
-                                </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -144,7 +141,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="TdX-yR-bIr" kind="relationship" relationship="rootViewController" id="yEW-vg-cZU"/>
+                        <segue destination="6SB-XP-6oN" kind="relationship" relationship="rootViewController" id="peL-cB-d7a"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X4G-8B-h6O" userLabel="First Responder" sceneMemberID="firstResponder"/>

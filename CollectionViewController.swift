@@ -9,35 +9,30 @@
 import UIKit
 
 class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
-    var bigLayout = CollectionViewBigFlowLayout()
-    var smallLayout = CollectionViewSmallFlowLayout()
     
-    var bitArrays = [
-        BitLoader.initialBitArrayLoader("AnimalKingdom"),
-        BitLoader.initialBitArrayLoader("FamousPlaces"),
-    ]
+    var bitArray = BitLoader.initialBitArrayLoader("AnimalKingdom")
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        collectionView?.frame.size
         
     }
     
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return bitArrays.count
+        return bitArray.count
     }
     
     
+    
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return bitArrays[section].count
+        return bitArray.count
     }
     
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         var cell = collectionView.dequeueReusableCellWithReuseIdentifier("PhotoCell", forIndexPath: indexPath) as PhotoCell
         
-        let section = bitArrays[indexPath.section]
-        
-        let bit = section[indexPath.row]
+        let bit = bitArray[indexPath.row]
         let imageString = bit.name + "_256.jpg"
         let image = UIImage(named: imageString)
         cell.bitImage.image = image
@@ -45,32 +40,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         return cell
     }
     
-    // configure Header View
-    
-    override func collectionView(collectionView: UICollectionView,
-        viewForSupplementaryElementOfKind kind: String,
-        atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-            //1
-            switch kind {
-                //2
-            case UICollectionElementKindSectionHeader:
-                //3
-                let headerView =
-                collectionView.dequeueReusableSupplementaryViewOfKind(kind,
-                    withReuseIdentifier: "CollectionHeaderView",
-                    forIndexPath: indexPath)
-                    as CollectionHeaderView
-                if indexPath.section == 0 {
-                    headerView.headerLabel.text = "Animal Kingdom"
-                } else {
-                    headerView.headerLabel.text = "Famous Places"
-                }
-                return headerView
-            default:
-                //4
-                assert(false, "Unexpected element kind")
-            }
-    }
+
     
     
     

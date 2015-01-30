@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		276B4CA91A7BD5B3003AF99A /* CoverFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276B4CA81A7BD5B3003AF99A /* CoverFlowLayout.swift */; };
 		27884B011A7A881D00037B94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27884B001A7A881D00037B94 /* AppDelegate.swift */; };
 		27884B061A7A881D00037B94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27884B041A7A881D00037B94 /* Main.storyboard */; };
 		27884B081A7A881D00037B94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27884B071A7A881D00037B94 /* Images.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		276B4CA81A7BD5B3003AF99A /* CoverFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverFlowLayout.swift; sourceTree = "<group>"; };
 		27884AFB1A7A881D00037B94 /* InstaKilo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaKilo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27884AFF1A7A881D00037B94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27884B001A7A881D00037B94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				27A0C0E81A7B4E1700E6EF69 /* DemoViewController.swift */,
 				27884CAD1A7AB8AE00037B94 /* CollectionViewController.swift */,
 				27A0C0E41A7B48C100E6EF69 /* CollectionViewBigFlowLayout.swift */,
+				276B4CA81A7BD5B3003AF99A /* CoverFlowLayout.swift */,
 				27A0C0E61A7B48D800E6EF69 /* CollectionViewSmallFlowLayout.swift */,
 				27EB34811A7AD66800F184CD /* CollectionHeaderView.swift */,
 				27884CAF1A7ABAA600037B94 /* PhotoCell.swift */,
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				276B4CA91A7BD5B3003AF99A /* CoverFlowLayout.swift in Sources */,
 				27884CB61A7ABE0200037B94 /* Bit.swift in Sources */,
 				27884CAE1A7AB8AE00037B94 /* CollectionViewController.swift in Sources */,
 				27A0C0E11A7B43F800E6EF69 /* CollectionViewPageFlowLayout.swift in Sources */,
