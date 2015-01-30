@@ -9,6 +9,8 @@
 import UIKit
 
 class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+    var bigLayout = CollectionViewBigFlowLayout()
+    var smallLayout = CollectionViewSmallFlowLayout()
     
     var bitArrays = [
         BitLoader.initialBitArrayLoader("AnimalKingdom"),
@@ -17,6 +19,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {

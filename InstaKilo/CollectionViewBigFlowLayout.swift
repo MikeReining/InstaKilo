@@ -11,6 +11,9 @@ import UIKit
 class CollectionViewBigFlowLayout: UICollectionViewFlowLayout {
     
     // MARK: - Init
+    override init() {
+        super.init()
+    }
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

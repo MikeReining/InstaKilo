@@ -114,6 +114,7 @@
 		27884AFE1A7A881D00037B94 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				27A0C0E01A7B43F800E6EF69 /* CollectionViewPageFlowLayout.swift */,
 				27884AFF1A7A881D00037B94 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -158,7 +159,6 @@
 			children = (
 				27A0C0E81A7B4E1700E6EF69 /* DemoViewController.swift */,
 				27884CAD1A7AB8AE00037B94 /* CollectionViewController.swift */,
-				27A0C0E01A7B43F800E6EF69 /* CollectionViewPageFlowLayout.swift */,
 				27A0C0E41A7B48C100E6EF69 /* CollectionViewBigFlowLayout.swift */,
 				27A0C0E61A7B48D800E6EF69 /* CollectionViewSmallFlowLayout.swift */,
 				27EB34811A7AD66800F184CD /* CollectionHeaderView.swift */,

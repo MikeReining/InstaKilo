@@ -11,7 +11,11 @@ import UIKit
 class CollectionViewSmallFlowLayout: UICollectionViewFlowLayout {
 
 // MARK: - Init
-        
+    
+    override init() {
+        super.init()
+    }
+    
         required init(coder aDecoder: NSCoder) {
             super.init(coder: aDecoder)
             self.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
@@ -19,4 +23,5 @@ class CollectionViewSmallFlowLayout: UICollectionViewFlowLayout {
             self.minimumLineSpacing = 0
             self.minimumInteritemSpacing = 0
         }
+
 }
