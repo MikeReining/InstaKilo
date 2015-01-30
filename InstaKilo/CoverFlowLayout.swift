@@ -16,13 +16,31 @@ class CoverFlowLayout: UICollectionViewFlowLayout {
         var size = self.collectionView!.frame.size
         cellCount = self.collectionView?.numberOfItemsInSection(0)
         itemSize = CGSizeMake(275, 275)
-        
-//        var size : CGSize = self.collectionView.frame.size
-//        cellCount = self.collectionView.numberOfItemsInSection(0)
-//        center = CGPointMake(size.width/2.0, size.height/2.0)
-//        centerX = center!.x
-//        centerY = center!.y
-//        radius = 300
+    }
+    
+    override func collectionViewContentSize() -> CGSize {
+        var size = self.collectionView!.frame.size
+        return size
+    }
+    
+    
+    
+//    override func layoutAttributesForElementsInRect(rect: CGRect) -> [AnyObject] {
+////        var attributes = [NSMutableArray]()
+////        
+////        for (var i = 0; i<cellCount!; i++) {
+////            var indexPath : NSIndexPath = NSIndexPath(forItem: i, inSection: 0)
+////            attributes.append(self.layoutAttributesForItemAtIndexPath(indexPath))
+////        }
+//    return attributes
+//    }
+    
+    
+    override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewLayoutAttributes! {
+        var attributes : UICollectionViewLayoutAttributes = UICollectionViewLayoutAttributes(forCellWithIndexPath: indexPath)
+        attributes.size = CGSizeMake(70, 70)
+        attributes.center = CGPointMake(0,0)
+        return attributes
     }
     
 }
