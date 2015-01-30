@@ -9,6 +9,7 @@
 import UIKit
 
 class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+    
     var bitArrays = [
         BitLoader.initialBitArrayLoader("AnimalKingdom"),
         BitLoader.initialBitArrayLoader("FamousPlaces"),

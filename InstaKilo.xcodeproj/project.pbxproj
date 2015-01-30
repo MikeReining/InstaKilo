@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		272B7D061A7AEBC00045EB24 /* CustomCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272B7D051A7AEBC00045EB24 /* CustomCollectionViewFlowLayout.swift */; };
 		27884B011A7A881D00037B94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27884B001A7A881D00037B94 /* AppDelegate.swift */; };
 		27884B061A7A881D00037B94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27884B041A7A881D00037B94 /* Main.storyboard */; };
 		27884B081A7A881D00037B94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27884B071A7A881D00037B94 /* Images.xcassets */; };
@@ -18,6 +17,10 @@
 		27884CB41A7ABC7200037B94 /* AnimalKingdom in Resources */ = {isa = PBXBuildFile; fileRef = 27884CB31A7ABC7200037B94 /* AnimalKingdom */; };
 		27884CB61A7ABE0200037B94 /* Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27884CB51A7ABE0200037B94 /* Bit.swift */; };
 		27884CBB1A7AC0CF00037B94 /* BitLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27884CBA1A7AC0CF00037B94 /* BitLoader.swift */; };
+		27A0C0E11A7B43F800E6EF69 /* CollectionViewPageFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0C0E01A7B43F800E6EF69 /* CollectionViewPageFlowLayout.swift */; };
+		27A0C0E51A7B48C100E6EF69 /* CollectionViewBigFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0C0E41A7B48C100E6EF69 /* CollectionViewBigFlowLayout.swift */; };
+		27A0C0E71A7B48D800E6EF69 /* CollectionViewSmallFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0C0E61A7B48D800E6EF69 /* CollectionViewSmallFlowLayout.swift */; };
+		27A0C0E91A7B4E1700E6EF69 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0C0E81A7B4E1700E6EF69 /* DemoViewController.swift */; };
 		27EB34801A7AD0B200F184CD /* FamousPlaces in Resources */ = {isa = PBXBuildFile; fileRef = 27EB347F1A7AD0B200F184CD /* FamousPlaces */; };
 		27EB34821A7AD66800F184CD /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EB34811A7AD66800F184CD /* CollectionHeaderView.swift */; };
 /* End PBXBuildFile section */
@@ -33,7 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		272B7D051A7AEBC00045EB24 /* CustomCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		27884AFB1A7A881D00037B94 /* InstaKilo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaKilo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27884AFF1A7A881D00037B94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27884B001A7A881D00037B94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		27884CB51A7ABE0200037B94 /* Bit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bit.swift; sourceTree = "<group>"; };
 		27884CB71A7ABEBA00037B94 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		27884CBA1A7AC0CF00037B94 /* BitLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitLoader.swift; sourceTree = "<group>"; };
+		27A0C0E01A7B43F800E6EF69 /* CollectionViewPageFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewPageFlowLayout.swift; sourceTree = "<group>"; };
+		27A0C0E41A7B48C100E6EF69 /* CollectionViewBigFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewBigFlowLayout.swift; sourceTree = "<group>"; };
+		27A0C0E61A7B48D800E6EF69 /* CollectionViewSmallFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewSmallFlowLayout.swift; sourceTree = "<group>"; };
+		27A0C0E81A7B4E1700E6EF69 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		27EB347E1A7ACB7B00F184CD /* SplitExamples.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SplitExamples.playground; sourceTree = "<group>"; };
 		27EB347F1A7AD0B200F184CD /* FamousPlaces */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FamousPlaces; sourceTree = "<group>"; };
 		27EB34811A7AD66800F184CD /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
@@ -150,8 +156,11 @@
 		27884CA51A7A8DFC00037B94 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				27A0C0E81A7B4E1700E6EF69 /* DemoViewController.swift */,
 				27884CAD1A7AB8AE00037B94 /* CollectionViewController.swift */,
-				272B7D051A7AEBC00045EB24 /* CustomCollectionViewFlowLayout.swift */,
+				27A0C0E01A7B43F800E6EF69 /* CollectionViewPageFlowLayout.swift */,
+				27A0C0E41A7B48C100E6EF69 /* CollectionViewBigFlowLayout.swift */,
+				27A0C0E61A7B48D800E6EF69 /* CollectionViewSmallFlowLayout.swift */,
 				27EB34811A7AD66800F184CD /* CollectionHeaderView.swift */,
 				27884CAF1A7ABAA600037B94 /* PhotoCell.swift */,
 				27884CB71A7ABEBA00037B94 /* MyPlayground.playground */,
@@ -273,11 +282,14 @@
 			files = (
 				27884CB61A7ABE0200037B94 /* Bit.swift in Sources */,
 				27884CAE1A7AB8AE00037B94 /* CollectionViewController.swift in Sources */,
-				272B7D061A7AEBC00045EB24 /* CustomCollectionViewFlowLayout.swift in Sources */,
+				27A0C0E11A7B43F800E6EF69 /* CollectionViewPageFlowLayout.swift in Sources */,
 				27884CB01A7ABAA700037B94 /* PhotoCell.swift in Sources */,
 				27EB34821A7AD66800F184CD /* CollectionHeaderView.swift in Sources */,
+				27A0C0E51A7B48C100E6EF69 /* CollectionViewBigFlowLayout.swift in Sources */,
 				27884CBB1A7AC0CF00037B94 /* BitLoader.swift in Sources */,
 				27884B011A7A881D00037B94 /* AppDelegate.swift in Sources */,
+				27A0C0E71A7B48D800E6EF69 /* CollectionViewSmallFlowLayout.swift in Sources */,
+				27A0C0E91A7B4E1700E6EF69 /* DemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

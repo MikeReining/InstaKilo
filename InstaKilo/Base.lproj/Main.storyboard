@@ -12,7 +12,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="qh8-QS-IwS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="485"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="18" minimumInteritemSpacing="0.0" id="pQS-Tf-j3o">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="18" minimumInteritemSpacing="0.0" id="pQS-Tf-j3o" customClass="CollectionViewBigFlowLayout" customModule="InstaKilo" customModuleProvider="target">
                             <size key="itemSize" width="160" height="160"/>
                             <size key="headerReferenceSize" width="50" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -70,6 +70,9 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Photos" id="CNT-Se-1Ur"/>
+                    <connections>
+                        <outlet property="collectionView" destination="qh8-QS-IwS" id="Gxk-Hd-QrA"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fVH-du-leD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -78,7 +81,7 @@
         <!--Collection View Demo-->
         <scene sceneID="xkF-Tm-ao2">
             <objects>
-                <viewController id="TdX-yR-bIr" sceneMemberID="viewController">
+                <viewController id="TdX-yR-bIr" customClass="DemoViewController" customModule="InstaKilo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="r16-XF-nvH"/>
                         <viewControllerLayoutGuide type="bottom" id="QDp-EF-AYw"/>
@@ -89,7 +92,20 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7dW-vT-XX6">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="117"/>
-                                <color key="backgroundColor" red="0.45779570000000003" green="1" blue="0.40149130620000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="QvF-Vo-bgu">
+                                        <rect key="frame" x="8" y="75" width="97" height="29"/>
+                                        <segments>
+                                            <segment title="Big"/>
+                                            <segment title="Small"/>
+                                        </segments>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="layoutSegmentChanged:" destination="TdX-yR-bIr" eventType="valueChanged" id="Gxg-gg-IeW"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="en7-BA-lMK">
                                 <rect key="frame" x="0.0" y="115" width="600" height="485"/>
