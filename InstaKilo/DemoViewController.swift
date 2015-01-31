@@ -9,20 +9,40 @@
 import UIKit
 
 class DemoViewController: UIViewController {
+    @IBOutlet weak var containerOutlet: UIView!
+    
+    var collectionViewController:UICollectionViewController?
+    var someCollectionView:UICollectionView?
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        println(storyboard)
+        println(segue.identifier)
+        println(segue.destinationViewController)
+        if segue.identifier == "containingCVCSegue" {
+            
+            collectionViewController = segue.destinationViewController as? UICollectionViewController
+        }
+    }
+    
     @IBAction func layoutSegmentChanged(sender: UISegmentedControl) {
-        let cvc = CollectionViewController()
-        let smallLayout = CollectionViewSmallFlowLayout()
-        cvc.smallLayout.invalidateLayout()
-        cvc.collectionView?.setCollectionViewLayout(smallLayout, animated: false)
-        let alert = UIAlertController(title: "Bummer!", message: "Switching between BIG and SMALL layouts only works if you change the custom class for the Collection View in the storyboard.", preferredStyle: .Alert)
-        let action = UIAlertAction(title: "Please help", style: .Default, handler: nil)
-        alert.addAction(action)
-        presentViewController(alert, animated: true, completion: nil)
+        switch sender.selectedSegmentIndex {
+        case 0:
+            let smallLayout = CollectionViewSmallFlowLayout()
+            collectionViewController?.collectionView?.setCollectionViewLayout(smallLayout, animated: true)
+            collectionViewController?.collectionView?.reloadData()
+        case 1:
+            let bigLayout = CollectionViewBigFlowLayout()
+            collectionViewController?.collectionView?.setCollectionViewLayout(bigLayout, animated: true)
+            collectionViewController?.collectionView?.reloadData()
+        default:
+            println("uh oh not supposed to happen!")
+        }
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 

@@ -110,7 +110,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="en7-BA-lMK">
                                 <rect key="frame" x="0.0" y="115" width="600" height="485"/>
                                 <connections>
-                                    <segue destination="6SB-XP-6oN" kind="embed" id="Psb-al-fyG"/>
+                                    <segue destination="6SB-XP-6oN" kind="embed" identifier="containingCVCSegue" id="Psb-al-fyG"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -128,6 +128,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Collection View Demo" id="Oep-fI-jue"/>
+                    <connections>
+                        <outlet property="containerOutlet" destination="en7-BA-lMK" id="nuh-RK-6He"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CHr-PG-HPJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
